@@ -46,7 +46,7 @@ function Posts({ post }: any) {
                             <div className='w-fit max-w-[100px] overflow-hidden'>{post.createdTime}</div>
                         </div>
                     </div>
-                    <div className=' hover:bg-primary/20 px-2 py-2 rounded-full hover:text-primary'>
+                    <div className=' hover:bg-primary1/20 px-2 py-2 rounded-full hover:text-primary1'>
                         <FiMoreHorizontal />
                     </div>
                 </div>
@@ -59,8 +59,8 @@ function Posts({ post }: any) {
                     )}
                 </div>
                 <div className=' flex flex-row justify-between w-full items-center mt-2'>
-                    <div className=' text-gray-400  hover:text-primary flex items-center gap-1 '>
-                        <div className='px-2 py-2 rounded-full text-xl hover:bg-primary/20 max-sm:text-lg '> <BiMessageRounded /></div>
+                    <div className=' text-gray-400  hover:text-primary1 flex items-center gap-1 '>
+                        <div className='px-2 py-2 rounded-full text-xl hover:bg-primary1/20 max-sm:text-lg '> <BiMessageRounded /></div>
                         <span> {post.comments.length} </span>
                     </div>
                     <div className=' text-gray-400 hover:text-green-400 flex items-center '>
@@ -71,14 +71,14 @@ function Posts({ post }: any) {
                         <div className={`px-2 py-2 rounded-full text-xl max-sm:text-lg hover:bg-red-400/20 ${isLiked?"text-red-700":"text-gray-400"} `} onClick={() => { onLikeHandler(post); setIsLiked(!isLiked) }}>{!isLiked?<GrFavorite /> :<MdOutlineFavorite/>}</div>
                         <span>{isLiked?post.tweet_liked.length+1:post.tweet_liked.length}</span>
                     </div>
-                    <div className=' text-gray-400 hover:bg-primary/20 hover:text-primary items-center text-xl flex  max-sm:text-lg px-2 py-2 rounded-full'>
+                    <div className=' text-gray-400 hover:bg-primary1/20 hover:text-primary1 items-center text-xl flex  max-sm:text-lg px-2 py-2 rounded-full'>
                         <CgPoll />
                     </div>
                     <div className='text-gray-400 items-center text-xl flex max-sm:text-lg '>
-                        <div className='hover:bg-primary/20 hover:text-primary flex px-2 py-2 rounded-full'>
+                        <div className='hover:bg-primary1/20 hover:text-primary1 flex px-2 py-2 rounded-full'>
                             <IoBookmarkOutline />
                         </div>
-                        <div className='hover:bg-primary/20 hover:text-primary flex px-2 py-2 rounded-full'>
+                        <div className='hover:bg-primary1/20 hover:text-primary1 flex px-2 py-2 rounded-full'>
                             <FiUpload />
                         </div>
                     </div>

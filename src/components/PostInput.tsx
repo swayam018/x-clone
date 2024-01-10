@@ -117,10 +117,10 @@ function PostInput() {
                                 );
                             })}
                     </div>
-                    <div className=' text-primary flex gap-2 font-semibold items-center '><FaGlobeAmericas />Everyone can reply</div>
+                    <div className=' text-primary1 flex gap-2 font-semibold items-center '><FaGlobeAmericas />Everyone can reply</div>
                 </div>
                 <div className=' flex-row flex mx-2 py-2 items-center' >
-                    <div className=' text-primary flex gap-1 flex-1 max-[407px]:gap-0 '>
+                    <div className=' text-primary1 flex gap-1 flex-1 max-[407px]:gap-0 '>
                         <input
                             type="file"
                             accept=".jpg, .jpeg, .png"
@@ -142,8 +142,8 @@ function PostInput() {
                         <div className='icons max-sm:hidden'><LuCalendarClock /></div>
                         <div className='icons'><IoLocationOutline /></div>
                     </div>
-                    <div className=' px-4 text-primary'>{text.length}/250</div>
-                    <button type="submit" disabled={text.length<1} className={` disabled:bg-gray-400/50 disabled:cursor-not-allowed bg-primary py-2 px-5 text-lg  rounded-full`} onClick={onClickHandler}>Post</button>
+                    <div className=' px-4 text-primary1'>{text.length}/250</div>
+                    <button type="submit" disabled={text.length<1} className={` disabled:bg-gray-400/50 disabled:cursor-not-allowed bg-primary1 py-2 px-5 text-lg  rounded-full`} onClick={onClickHandler}>Post</button>
                 </div>
             </div>
         </div>

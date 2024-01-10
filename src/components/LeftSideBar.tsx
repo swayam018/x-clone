@@ -62,8 +62,8 @@ function LeftSideBar() {
                             </div>
                         </Link>
                     ))}
-                    <button type="button" className=" bg-primary py-[10px] text-2xl mx-4 w-52 rounded-full my-2 max-xl:hidden ">Post</button>
-                    <div className="hidden max-xl:inline bg-primary py-4 text-2xl ml-4 w-fit rounded-full my-2  hover:bg-primary/40 px-4 max-sm:text-xl max-sm:px-2 max-sm:py-2">
+                    <button type="button" className=" bg-primary1 py-[10px] text-2xl mx-4 w-52 rounded-full my-2 max-xl:hidden ">Post</button>
+                    <div className="hidden max-xl:inline bg-primary1 py-4 text-2xl ml-4 w-fit rounded-full my-2  hover:bg-primary1/40 px-4 max-sm:text-xl max-sm:px-2 max-sm:py-2">
                         < GiFeather />
                     </div>
                     <div className='w-10 h-10 ml-4 mr-2 hidden max-xl:inline-block'>

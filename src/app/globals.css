@@ -74,3 +74,31 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@media (max-height: 710px) { 
+  .sidebar{
+    height: 100%;
+  }
+}
+
+@layer components{
+   .icons{
+    @apply [&>*]:w-5 [&>*]:h-5 w-[34px]  h-[34px]  rounded-full hover:bg-blue-500/40 flex justify-center items-center 
+  }
+  .input{
+    @apply text-xl flex flex-col gap-2 w-80
+  }
+  .usertag{
+    @apply pr-4 flex gap-1 items-center text-base font-thin
+  }
+  .feedhead{
+    @apply flex-1 text-center hover:bg-gray-700/40 flex items-center justify-center font-thin tracking-wider
+}
+  /* .triangle{
+    @apply before:absolute before:content-normal before:-bottom-2 before:left-1/2 before:w-5 before:h-5 before:rotate-45 before:bg-black before:rounded-sm  before:shadow-modal before:shadow-white/40
+  } */
+  .oauthButton{
+    @apply w-80 items-center flex gap-4 flex-row px-5 bg-white text-lg text-black py-2 rounded-full justify-start font-semibold max-[380px]:w-64 max-[380px]:gap-2 max-[380px]:px-4 
+  }
+}
